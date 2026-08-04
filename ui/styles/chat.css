@@ -1,0 +1,146 @@
+/* Chat — Claude / ChatGPT style surface */
+
+div[data-testid="stChatMessage"] {
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none;
+  padding: 1rem 0 !important;
+  margin-bottom: 0.25rem !important;
+  border-bottom: 1px solid var(--sq-border) !important;
+}
+
+div[data-testid="stChatMessage"] pre,
+div[data-testid="stChatMessage"] code {
+  font-family: var(--sq-mono) !important;
+}
+
+/* Soften default chat avatars */
+div[data-testid="stChatMessage"] [data-testid="stChatMessageAvatarUser"],
+div[data-testid="stChatMessage"] [data-testid="stChatMessageAvatarAssistant"] {
+  background: var(--sq-bg-muted) !important;
+}
+
+div[data-testid="stChatInput"] textarea {
+  border-radius: var(--sq-radius) !important;
+  min-height: 3rem !important;
+  padding: 0.85rem 1rem !important;
+  border: 1px solid var(--sq-border-strong) !important;
+  background: var(--sq-bg-elevated) !important;
+  box-shadow: none !important;
+  font-family: var(--sq-font) !important;
+  font-size: 0.9375rem !important;
+  line-height: 1.5 !important;
+  caret-color: var(--sq-accent) !important;
+}
+
+div[data-testid="stChatInput"] textarea:focus {
+  border-color: var(--sq-accent) !important;
+  box-shadow: 0 0 0 3px var(--sq-accent-soft) !important;
+}
+
+div[data-testid="stChatInputContainer"],
+section[data-testid="stChatInput"] {
+  padding-left: 0 !important;
+}
+
+.sq-chat-user {
+  background: var(--sq-bg-muted);
+  border: 1px solid var(--sq-border);
+  border-radius: var(--sq-radius);
+  padding: 0.85rem 1rem;
+  font-size: 0.9375rem;
+  color: var(--sq-text);
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+}
+
+.sq-chat-answer {
+  background: var(--sq-bg-elevated);
+  border: 1px solid var(--sq-border);
+  border-left: 2px solid var(--sq-accent);
+  border-radius: var(--sq-radius);
+  padding: 1rem 1.15rem;
+  margin: 0.35rem 0 0.85rem;
+}
+
+.sq-chat-answer__label {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--sq-text-3);
+  margin-bottom: 0.45rem;
+}
+
+.sq-chat-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  align-items: center;
+  margin: 0.25rem 0 0.85rem;
+}
+
+.sq-chat-empty {
+  text-align: center;
+  padding: 2.5rem 1.25rem 2rem;
+  border: 1px dashed var(--sq-border-strong);
+  border-radius: var(--sq-radius);
+  background: var(--sq-bg-elevated);
+  margin: 0.5rem 0 1.25rem;
+}
+
+.sq-chat-empty h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--sq-text);
+}
+
+.sq-chat-empty p {
+  margin: 0 auto;
+  max-width: 42ch;
+  font-size: 0.875rem;
+  color: var(--sq-text-3) !important;
+}
+
+.sq-chat-suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.sq-chat-suggestions--start {
+  justify-content: flex-start;
+  margin-top: 0.35rem;
+}
+
+.sq-chat-chip {
+  display: inline-flex;
+  padding: 0.35rem 0.7rem;
+  border-radius: var(--sq-radius-sm);
+  border: 1px solid var(--sq-border);
+  background: var(--sq-bg-muted);
+  color: var(--sq-text-2);
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.sq-data-overview {
+  margin: 0.15rem 0 0.75rem;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid var(--sq-border);
+  border-radius: var(--sq-radius);
+  background: var(--sq-bg-muted);
+  color: var(--sq-text-2);
+  font-size: 0.8125rem;
+  line-height: 1.45;
+}
+
+.sq-empty--inline {
+  margin: 0.5rem 0 1rem;
+  padding: 1.25rem 1rem;
+}

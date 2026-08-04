@@ -1,0 +1,24 @@
+/* Tables */
+
+div[data-testid="stDataFrame"] {
+  border: 1px solid var(--sq-border);
+  border-radius: var(--sq-radius);
+  overflow: hidden;
+  background: var(--sq-bg-elevated);
+}
+
+[data-testid="stTable"] {
+  border: 1px solid var(--sq-border);
+  border-radius: var(--sq-radius);
+  overflow: hidden;
+}
+
+.sq-table-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  color: var(--sq-text-3);
+  font-size: 0.75rem;
+}

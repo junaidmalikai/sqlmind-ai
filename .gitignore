@@ -1,0 +1,138 @@
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+
+# Packaging / build artifacts
+*.egg-info/
+*.egg
+build/
+dist/
+wheels/
+pip-wheel-metadata/
+sdist/
+*.manifest
+*.spec
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.env/
+
+# ---------------------------------------------------------------------------
+# Secrets / local configuration
+# ---------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# ---------------------------------------------------------------------------
+# IDE / editor
+# ---------------------------------------------------------------------------
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+*.code-workspace
+.cursor/
+.claude/
+
+# ---------------------------------------------------------------------------
+# OS
+# ---------------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ---------------------------------------------------------------------------
+# Logs / caches / test artifacts
+# ---------------------------------------------------------------------------
+*.log
+logs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+.hypothesis/
+.cache/
+nosetests.xml
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ---------------------------------------------------------------------------
+# App runtime data (regenerated locally / on Streamlit Cloud)
+# Keep directory placeholders so clones have expected paths.
+# ---------------------------------------------------------------------------
+data/**
+!data/.gitkeep
+exports/**
+!exports/.gitkeep
+
+# SQLite / vector / metrics artifacts anywhere
+# Sample retail DB is generated at runtime into data/ via sample_data/seed.py
+*.db
+*.sqlite
+*.sqlite3
+*.sqlite3-shm
+*.sqlite3-wal
+*.prom
+
+# Runtime traces, checkpoints, local reports
+**/runtime_traces/
+checkpoints/
+*.checkpoint
+*_checkpoints.*
+
+# Enterprise / observability local dumps (under data/ already ignored; belt-and-suspenders)
+*.jsonl
+
+# Temporary / backup / debug
+*.tmp
+*.temp
+*.bak
+*.backup
+*.orig
+*.old
+debug_*.txt
+*_debug.*
+
+# Local plugin / metrics / screenshot scratch (not portfolio assets)
+.plugins_cache/
+metrics_local/
+local_screenshots/
+*.stackdump
+
+# Tooling noise
+.dmypy.json
+dmypy.json
+.pytype/
+.spyderproject
+.spyproject
+.ropeproject
+/site
+.pdm-python
+.pdm-build/
+.uv/

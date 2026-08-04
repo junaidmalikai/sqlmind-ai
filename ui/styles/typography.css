@@ -1,0 +1,127 @@
+/* Typography + app chrome */
+
+html, body, [class*="css"], .stApp, .stMarkdown, button, input, textarea, select {
+  font-family: var(--sq-font) !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.stApp {
+  background: var(--sq-bg) !important;
+  color: var(--sq-text) !important;
+}
+
+footer { visibility: hidden; }
+div[data-testid="stDecoration"] { display: none !important; }
+#MainMenu { visibility: hidden; }
+
+.block-container h1,
+.block-container h2,
+.block-container h3,
+.block-container h4 {
+  font-family: var(--sq-font) !important;
+  color: var(--sq-text) !important;
+  letter-spacing: -0.025em;
+  font-weight: 600 !important;
+  line-height: 1.25 !important;
+}
+
+.block-container .stMarkdown,
+.block-container p,
+.block-container li,
+.block-container label {
+  color: var(--sq-text-2) !important;
+  line-height: 1.55;
+  font-size: 0.9375rem;
+}
+
+.block-container code,
+.block-container pre,
+.stCode,
+[data-testid="stCode"] {
+  font-family: var(--sq-mono) !important;
+}
+
+.sq-mono {
+  font-family: var(--sq-mono);
+  font-size: 0.8125rem;
+}
+
+.sq-label {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--sq-text-3);
+}
+
+.sq-eyebrow {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--sq-text-3);
+  margin-bottom: var(--sq-2);
+}
+
+.sq-section {
+  margin: var(--sq-8) 0 var(--sq-3);
+}
+
+.sq-section__title {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--sq-text);
+  letter-spacing: -0.015em;
+  margin: 0;
+}
+
+.sq-section__sub {
+  margin: 0.2rem 0 0;
+  color: var(--sq-text-3);
+  font-size: 0.8125rem;
+}
+
+.sq-footer {
+  margin-top: var(--sq-12);
+  padding-top: var(--sq-4);
+  border-top: 1px solid var(--sq-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: var(--sq-4);
+  flex-wrap: wrap;
+  color: var(--sq-text-3);
+  font-size: 0.75rem;
+  line-height: 1.55;
+}
+
+.sq-footer strong {
+  color: var(--sq-text-2);
+  font-weight: 500;
+}
+
+.sq-footer__contact {
+  text-align: right;
+}
+
+.sq-footer__name {
+  color: var(--sq-text-2);
+  font-weight: 500;
+  margin-bottom: 0.15rem;
+}
+
+.sq-footer__contact a {
+  color: var(--sq-text-2);
+  text-decoration: none;
+}
+
+.sq-footer__contact a:hover {
+  text-decoration: underline;
+}
+
+div[data-testid="stAlert"] {
+  border-radius: var(--sq-radius-sm) !important;
+  border: 1px solid var(--sq-border) !important;
+  box-shadow: none;
+}

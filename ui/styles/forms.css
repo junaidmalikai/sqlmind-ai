@@ -1,0 +1,38 @@
+/* Forms */
+
+.block-container .stTextInput input,
+.block-container .stNumberInput input,
+.block-container .stTextArea textarea,
+.block-container .stSelectbox div[data-baseweb="select"] > div,
+.block-container [data-baseweb="select"] > div {
+  background: var(--sq-bg-elevated) !important;
+  border: 1px solid var(--sq-border-strong) !important;
+  color: var(--sq-text) !important;
+  border-radius: var(--sq-radius-sm) !important;
+  min-height: var(--sq-control-h) !important;
+  font-family: var(--sq-font) !important;
+}
+
+.block-container .stTextArea textarea {
+  min-height: 5.5rem !important;
+  line-height: 1.5 !important;
+}
+
+.block-container .stTextInput input:focus,
+.block-container .stNumberInput input:focus,
+.block-container .stTextArea textarea:focus {
+  border-color: var(--sq-accent) !important;
+  box-shadow: 0 0 0 3px var(--sq-accent-soft) !important;
+}
+
+.block-container [data-testid="stFileUploaderDropzone"] {
+  background: var(--sq-bg-elevated) !important;
+  border: 1px dashed var(--sq-border-strong) !important;
+  border-radius: var(--sq-radius) !important;
+}
+
+.block-container .stCheckbox label,
+.block-container .stRadio label {
+  color: var(--sq-text-2) !important;
+  font-weight: 500 !important;
+}

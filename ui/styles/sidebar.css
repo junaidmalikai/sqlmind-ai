@@ -1,0 +1,207 @@
+/* Sidebar — lightweight ChatGPT / Cursor nav */
+
+section[data-testid="stSidebar"] {
+  background: var(--sq-bg-ink) !important;
+  border-right: 1px solid var(--sq-border-ink) !important;
+}
+
+section[data-testid="stSidebar"] > div:first-child {
+  padding-top: 0.85rem !important;
+  padding-bottom: 1.25rem !important;
+}
+
+section[data-testid="stSidebar"] .stMarkdown p,
+section[data-testid="stSidebar"] .stCaption,
+section[data-testid="stSidebar"] label,
+section[data-testid="stSidebar"] .stMarkdown,
+section[data-testid="stSidebar"] span {
+  color: var(--sq-text-on-ink-2) !important;
+}
+
+section[data-testid="stSidebar"] h1,
+section[data-testid="stSidebar"] h2,
+section[data-testid="stSidebar"] h3 {
+  color: var(--sq-text-on-ink) !important;
+  font-weight: 600 !important;
+}
+
+section[data-testid="stSidebar"] hr {
+  border-color: var(--sq-border-ink) !important;
+  margin: 0.7rem 0 !important;
+}
+
+/* Lightweight nav buttons */
+section[data-testid="stSidebar"] .stButton > button {
+  background: transparent !important;
+  color: var(--sq-text-on-ink-2) !important;
+  border: none !important;
+  border-radius: var(--sq-radius-sm) !important;
+  font-weight: 400 !important;
+  font-size: 0.8125rem !important;
+  justify-content: flex-start !important;
+  text-align: left !important;
+  padding: 0.4rem 0.6rem !important;
+  margin-bottom: 0.05rem !important;
+  box-shadow: none !important;
+  min-height: 1.9rem !important;
+  transition: background 0.1s ease, color 0.1s ease !important;
+}
+
+section[data-testid="stSidebar"] .stButton > button:hover {
+  background: var(--sq-bg-ink-hover) !important;
+  color: var(--sq-text-on-ink) !important;
+}
+
+section[data-testid="stSidebar"] .stButton > button:focus-visible {
+  outline: 1px solid var(--sq-accent) !important;
+  outline-offset: 1px !important;
+}
+
+section[data-testid="stSidebar"] .stButton > button[kind="primary"],
+section[data-testid="stSidebar"] .stButton > button[data-testid="baseButton-primary"] {
+  background: var(--sq-bg-ink-hover) !important;
+  color: var(--sq-text-on-ink) !important;
+  font-weight: 500 !important;
+  box-shadow: inset 2px 0 0 var(--sq-accent) !important;
+}
+
+section[data-testid="stSidebar"] .stButton > button p,
+section[data-testid="stSidebar"] .stButton > button span,
+section[data-testid="stSidebar"] .stButton > button div {
+  color: inherit !important;
+  background: transparent !important;
+}
+
+section[data-testid="stSidebar"] .stTextInput input,
+section[data-testid="stSidebar"] .stNumberInput input,
+section[data-testid="stSidebar"] .stTextArea textarea,
+section[data-testid="stSidebar"] .stSelectbox div[data-baseweb="select"] > div,
+section[data-testid="stSidebar"] [data-baseweb="select"] > div {
+  background: var(--sq-bg-ink-soft) !important;
+  border: 1px solid var(--sq-border-ink) !important;
+  color: var(--sq-text-on-ink) !important;
+  border-radius: var(--sq-radius-sm) !important;
+  min-height: var(--sq-control-h-sm) !important;
+}
+
+section[data-testid="stSidebar"] .stSelectbox *,
+section[data-testid="stSidebar"] [data-baseweb="select"] * {
+  color: var(--sq-text-on-ink) !important;
+}
+
+section[data-testid="stSidebar"] [data-testid="stFileUploaderDropzone"] {
+  background: var(--sq-bg-ink-soft) !important;
+  border: 1px dashed rgba(156, 163, 175, 0.28) !important;
+  border-radius: var(--sq-radius-sm) !important;
+}
+
+section[data-testid="stSidebar"] .stExpander,
+section[data-testid="stSidebar"] div[data-testid="stExpander"] {
+  background: transparent !important;
+  border: 1px solid var(--sq-border-ink) !important;
+  border-radius: var(--sq-radius-sm) !important;
+  margin-bottom: 0.4rem !important;
+}
+
+section[data-testid="stSidebar"] [data-testid="stExpander"] summary,
+section[data-testid="stSidebar"] [data-testid="stExpander"] p,
+section[data-testid="stSidebar"] [data-testid="stExpander"] span {
+  color: var(--sq-text-on-ink) !important;
+}
+
+.sq-brand {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  margin: 0 0 0.85rem;
+}
+
+.sq-brand__mark {
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: var(--sq-radius-sm);
+  background: var(--sq-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--sq-accent-on);
+  font-weight: 600;
+  font-size: 0.5625rem;
+  letter-spacing: 0.04em;
+  flex-shrink: 0;
+  font-family: var(--sq-mono);
+}
+
+.sq-brand__name {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--sq-text-on-ink);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.sq-brand__tag {
+  color: var(--sq-text-on-ink-3);
+  font-size: 0.625rem;
+  margin-top: 0.08rem;
+}
+
+.sq-conn {
+  margin: 0 0 0.85rem;
+  background: transparent;
+  border: 1px solid var(--sq-border-ink);
+  border-radius: var(--sq-radius-sm);
+  padding: 0.65rem 0.75rem;
+}
+
+.sq-conn__head {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.25rem;
+}
+
+.sq-conn__status {
+  color: var(--sq-text-on-ink);
+  font-weight: 500;
+  font-size: 0.6875rem;
+}
+
+.sq-conn__name {
+  color: var(--sq-text-on-ink);
+  font-weight: 500;
+  font-size: 0.8125rem;
+  margin-bottom: 0.4rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sq-conn__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.3rem;
+  font-size: 0.625rem;
+  color: var(--sq-text-on-ink-3);
+}
+
+.sq-conn__grid strong {
+  color: var(--sq-text-on-ink-2);
+  font-weight: 500;
+}
+
+.sq-nav-label {
+  font-size: 0.5625rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--sq-text-on-ink-3) !important;
+  margin: 0.55rem 0 0.25rem;
+}
+
+.sq-side-foot {
+  margin-top: 0.25rem;
+  color: var(--sq-text-on-ink-3) !important;
+  font-size: 0.625rem;
+  line-height: 1.4;
+}

@@ -1,0 +1,24 @@
+{
+  "id": "sqlmind.builtin.echo",
+  "name": "Echo Skill Plugin",
+  "version": "1.0.0",
+  "description": "Sample marketplace plugin demonstrating auto-registration.",
+  "author": "SQLMind",
+  "min_sqlmind_version": "1.0.0",
+  "enabled": true,
+  "hot_reload": true,
+  "sandbox": true,
+  "capabilities": [
+    {
+      "id": "skill.echo",
+      "kind": "skill",
+      "name": "Echo Skill",
+      "description": "Returns the payload for marketplace smoke tests.",
+      "skills": ["echo", "plugin_smoke"],
+      "tags": ["plugin", "demo"],
+      "provides": ["echo_result"],
+      "entrypoint": "plugins.builtins.echo_skill:echo_skill",
+      "risk_class": "low"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+[project]
+name = "sqlmind-ai"
+version = "1.0.0"
+description = "AI-Native Multi-Agent SQL Database Analytics Platform"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "streamlit>=1.39.0",
+    "langchain>=0.3.0",
+    "langchain-core>=0.3.0",
+    "langgraph>=0.2.0",
+    "langchain-ollama>=0.2.0",
+    "langchain-openai>=0.2.0",
+    "langchain-anthropic>=0.2.0",
+    "langchain-google-genai>=2.0.0",
+    "langchain-groq>=0.2.0",
+    "sqlalchemy>=2.0.36",
+    "psycopg2-binary>=2.9.9",
+    "pymysql>=1.1.1",
+    "pandas>=2.2.0",
+    "numpy>=1.26.0",
+    "plotly>=5.24.0",
+    "openpyxl>=3.1.5",
+    "tabulate>=0.9.0",
+    "reportlab>=4.2.0",
+    "pydantic>=2.9.0",
+    "pydantic-settings>=2.6.0",
+    "python-dotenv>=1.0.1",
+    "sqlglot>=30.14.0",
+    "langsmith>=0.10.15",
+    "langgraph-checkpoint-sqlite>=3.1.1",
+    "opentelemetry-api>=1.27.0",
+    "opentelemetry-sdk>=1.27.0",
+    "opentelemetry-exporter-otlp-proto-http>=1.27.0",
+    "kaleido>=1.3.0",
+    "prometheus-client>=0.21.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+]
+embeddings = [
+    "sentence-transformers>=3.0.0",
+]
+
+[tool.uv]
+package = false
